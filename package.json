@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "atob": "^2.0.3",
+    "bruteforcer": "^1.0.1",
+    "btoa": "^1.1.2",
+    "mz": "^2.7.0",
+    "nodemailer": "^4.4.2",
+    "progress": "^2.0.0"
+  }
+}

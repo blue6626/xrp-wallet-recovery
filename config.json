@@ -1,0 +1,20 @@
+{
+    "wallet": "testWallet.txt",
+    "chars": [
+        "eqrw",
+        "123"
+    ],
+    "min": 7,
+    "max": 7,
+    "caseIdx": 0,
+    "mailNotify": false,
+    "mail": {
+        "host": "smtp.163.com",
+        "port": 465,
+        "usr": "xrp_wallet_decrypt",
+        "pwd": "m5Qq2pRovgMf",
+        "sender": "xrp_wallet_decrypt@163.com",
+        "receiver": "edward852@163.com",
+        "secure": true
+    }
+}
