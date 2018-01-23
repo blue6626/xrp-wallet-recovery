@@ -1,5 +1,6 @@
 # Ripple (XRP) Wallet Recovery Tool
-This tool generates all possible candidates based on user-provided characters to brute-force the wallet.
+This tool generates all possible candidates based on user-provided characters to brute-force the wallet.  
+中文使用说明请看 [这里](https://github.com/edward852/xrp-wallet-recovery/blob/master/README_cn.md "这里") 。
 
 ## Prerequisite
 1. Wallet file  
@@ -54,23 +55,24 @@ See the following comments for user-specific configuration:
 
 ```javascript
 {
-    "wallet": "testWallet.txt",                      // filename of wallet
-    "chars": [                                       // characters(a string or an array of strings) used to generate candidates.
+    "wallet": "testWallet.txt",                 // filename of wallet
+    "chars": [                                  // characters(a string or an array of strings) used to generate candidates.
         "eqrw",
         "123"
     ],
-    "min": 7,                                        // minimum length of the candidate
-    "max": 7,                                        // maximum length of the candidate
-    "caseIdx": 0,                                    // case index indicates the recovery progress. The initial value is 0.
-    "mailNotify": false,                             // Whether to send email notification or not after a successful recovery(disabled by default). To enable notification, you need to fill in the following "mail" field.
+    "min": 7,                                   // minimum length of the candidate
+    "max": 7,                                   // maximum length of the candidate
+    "caseIdx": 0,                               // case index indicates the recovery progress. The initial value is 0.
+    "mailNotify": false,                        // Whether to send email notification or not after a successful recovery(disabled by default).
+                                                // To enable notification, you need to fill in the following "mail" field.
     "mail": {
-        "host": "smtp.163.com",                      // SMTP server address
-        "port": 465,                                 // SMTP service port
-        "usr": "xrp_wallet_decrypt",                 // username
-        "pwd": "m5Qq2pRovgMf",                       // password or authorization code(e.g. NetEase Mail)
-        "sender": "xrp_wallet_decrypt@163.com",      // email address of sender
-        "receiver": "edward852@163.com",             // email address of receiver
-        "secure": true                               // Use https or not(recommend)
+        "host": "smtp.163.com",                 // SMTP server address
+        "port": 465,                            // SMTP service port
+        "usr": "xrp_wallet_decrypt",            // username
+        "pwd": "m5Qq2pRovgMf",                  // password or authorization code(e.g. NetEase Mail)
+        "sender": "xrp_wallet_decrypt@163.com", // email address of sender
+        "receiver": "edward852@163.com",        // email address of receiver
+        "secure": true                          // Use https or not(recommend)
     }
 }
 ```
